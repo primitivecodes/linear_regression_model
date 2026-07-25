@@ -4,22 +4,17 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers.predict import router as predict_router
 from app.routers.retrain import router as retrain_router
 
+
 app = FastAPI(
     title="Crop Yield Prediction API",
     version="1.0.0",
     description="Predict crop yield using historical agricultural data."
 )
 
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://localhost:8080"
-]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
