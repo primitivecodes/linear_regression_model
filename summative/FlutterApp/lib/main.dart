@@ -68,8 +68,9 @@ class _PredictionPageState extends State<PredictionPage> {
   bool loading = false;
   String result = '';
 
-  // Chrome
-  final String apiUrl = 'http://127.0.0.1:8000/predict';
+  // Production API
+  final String apiUrl =
+      'https://linear-regression-model-y3qw.onrender.com/predict';
 
   // Android Emulator
   // final String apiUrl = "http://10.0.2.2:8000/predict";
