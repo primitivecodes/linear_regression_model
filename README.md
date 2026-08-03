@@ -185,6 +185,12 @@ Upload `yield_df.csv`.
 
 ---
 
+## Demo Video
+
+[![Crop Yield Prediction Demo](https://img.youtube.com/vi/CgwZJUYmmlQ/0.jpg)](https://youtu.be/CgwZJUYmmlQ)
+
+---
+
 ## Screenshots
 
 ### Flutter Mobile App
